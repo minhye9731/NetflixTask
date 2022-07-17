@@ -23,5 +23,15 @@ extension UIViewController {
         }
         self.present(alert, animated: true, completion: nil)
     }
+    
+    // MARK: - 확인만 뜨는 UIAlertController
+    func signupAlert(title: String, message: String? = nil, preferredStyle style: UIAlertController.Style = .alert,
+                     handler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let ok = UIAlertAction(title: "확인", style: .default, handler: handler)
+        
+        alert.addAction(ok)
+        self.present(alert, animated: true)
+    }
 
 }
