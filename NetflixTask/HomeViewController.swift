@@ -10,9 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var posterImage1: UIImageView!
-    @IBOutlet weak var posterImage2: UIImageView!
-    @IBOutlet weak var posterImage3: UIImageView!
+    @IBOutlet var posterImages: [UIImageView]!
+    @IBOutlet var menuButtons: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,36 +19,48 @@ class HomeViewController: UIViewController {
     }
     
     func setUI() {
-        backgroundImageView.image = UIImage(named: "movie1")
-        posterImage1.image = UIImage(named: "movie2")
-        posterImage2.image = UIImage(named: "movie3")
-        posterImage3.image = UIImage(named: "movie4")
-        
-        posterImage1.layer.borderWidth = 2
-        posterImage2.layer.borderWidth = 2
-        posterImage3.layer.borderWidth = 2
-        
-        posterImage1.layer.borderColor = UIColor.gray.cgColor
-        posterImage2.layer.borderColor = UIColor.gray.cgColor
-        posterImage3.layer.borderColor = UIColor.gray.cgColor
+        setButtonUI(btn: menuButtons[0], title: "TV 프로그램")
+        setButtonUI(btn: menuButtons[1], title: "영화")
+        setButtonUI(btn: menuButtons[2], title: "내가 찜한 콘텐츠")
+        backgroundImageView.image = UIImage(named: "movie4")
+        for img in posterImages {
+            img.image = UIImage(named: "movie\(img.tag)")
+            img.layer.borderWidth = 2
+            img.layer.borderColor = UIColor.gray.cgColor
+        }
+    }
+    
+    func setButtonUI(btn: UIButton, title: String) {
+        btn.setTitle(title, for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+    }
+    
+    // MARK: - 재생버튼 클릭시 액션
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        changeBorderColorRandom()
+        changeImgRandom(img: self.backgroundImageView, num: 0)
+        changeImgRandom(img: self.posterImages[0], num: 1)
+        changeImgRandom(img: self.posterImages[1], num: 2)
+        changeImgRandom(img: self.posterImages[2], num: 3)
     }
     
     // MARK: - 포스터 3개 테두리 색상 변경
     func changeBorderColorRandom() {
-          let r : CGFloat = CGFloat.random(in: 0.2...1)
-          let g : CGFloat = CGFloat.random(in: 0.2...1)
-          let b : CGFloat = CGFloat.random(in: 0.2...1)
-          
           UIButton.animate(withDuration: 0.8) {
-              self.posterImage1.layer.borderColor = UIColor(red: r, green: g, blue: b, alpha: 1).cgColor
-              self.posterImage2.layer.borderColor = UIColor(red: r, green: g, blue: b, alpha: 1).cgColor
-              self.posterImage3.layer.borderColor = UIColor(red: r, green: g, blue: b, alpha: 1).cgColor
+              let r : CGFloat = CGFloat.random(in: 0.2...1)
+              let g : CGFloat = CGFloat.random(in: 0.2...1)
+              let b : CGFloat = CGFloat.random(in: 0.2...1)
+              
+              for img in self.posterImages {
+                  img.layer.borderColor = UIColor(red: r, green: g, blue: b, alpha: 1).cgColor
+              }
           }
       }
 
-    func changeImageRandom() {
+    // MARK: - 배경, 포스터 이미지 변경
+    func changeImgRandom(img: UIImageView, num: Int) {
         var numbers: [Int] = []
-        
         while numbers.count < 4 {
             let number = Int.random(in: 1...20)
              if !numbers.contains(number) {
@@ -57,40 +68,12 @@ class HomeViewController: UIViewController {
              }
              print(numbers.sorted())
         }
-                
-        // 이미지뷰 이미지 변경
-        UIView.transition(with: self.backgroundImageView,
-                          duration: 0.8,
-                          options: .transitionCrossDissolve,
-                          animations: {
-             self.backgroundImageView.image = UIImage(named: "movie\(numbers[0])")
-        }, completion: nil )
-                
-        // 버튼 이미지 변경
-        UIView.transition(with: self.posterImage1,
-                          duration: 0.8,
-                          options: .transitionCrossDissolve,
-                          animations: {
-              self.posterImage1.image = UIImage(named: "movie\(numbers[1])")
-        }, completion: nil )
         
-        UIView.transition(with: self.posterImage2,
+        UIView.transition(with: img,
                           duration: 0.8,
                           options: .transitionCrossDissolve,
                           animations: {
-              self.posterImage2.image = UIImage(named: "movie\(numbers[2])")
+            img.image = UIImage(named: "movie\(numbers[num])")
         }, completion: nil )
-        
-        UIView.transition(with: self.posterImage3,
-                          duration: 0.8,
-                          options: .transitionCrossDissolve,
-                          animations: {
-              self.posterImage3.image = UIImage(named: "movie\(numbers[3])")
-        }, completion: nil )
-    }
-    
-    @IBAction func playButtonTapped(_ sender: UIButton) {
-        changeBorderColorRandom()
-        changeImageRandom()
     }
 }
