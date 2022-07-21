@@ -105,9 +105,9 @@ class SignUpViewController: UIViewController {
     
     // 화면이동
     func moveToMain() {
-        let newVC = self.storyboard?.instantiateViewController(identifier: "HomeViewController")
-        newVC?.modalTransitionStyle = .crossDissolve
-        newVC?.modalPresentationStyle = .fullScreen
-        self.present(newVC!, animated: true, completion: nil)
+        let newVC = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        newVC.modalTransitionStyle = .crossDissolve
+        newVC.modalPresentationStyle = .fullScreen
+        self.present(newVC, animated: true, completion: nil)
     }
 }
