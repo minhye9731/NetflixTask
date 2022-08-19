@@ -37,13 +37,10 @@ class SignUpViewController: UIViewController {
     }
     
     func designTextField(_ textFieldName: UITextField, keyboardType: UIKeyboardType, placeholder: String, isSecureTextEntry: Bool) {
-        textFieldName.layer.cornerRadius = 8
-        textFieldName.backgroundColor = UIColor.systemGray
-        textFieldName.font = .systemFont(ofSize: 15)
-        textFieldName.textAlignment = .center
-        textFieldName.keyboardType = keyboardType
+
+  
         textFieldName.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        textFieldName.autocorrectionType = .no
+        
         if #available(iOS 12.0, *) { textFieldName.textContentType = .oneTimeCode }
         textFieldName.isSecureTextEntry = isSecureTextEntry
     }

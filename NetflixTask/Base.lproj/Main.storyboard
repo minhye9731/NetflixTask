@@ -233,36 +233,18 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xRe-rg-WKN" secondAttribute="height" multiplier="1:1" id="OZj-hY-rBy"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="50"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FeA-wm-be3">
                                         <rect key="frame" x="125" y="0.0" width="115" height="115"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FeA-wm-be3" secondAttribute="height" multiplier="1:1" id="g4d-mI-ALL"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="50"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRm-4F-IvD">
                                         <rect key="frame" x="250" y="0.0" width="115" height="115"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PRm-4F-IvD" secondAttribute="height" multiplier="1:1" id="loq-ui-rZV"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="50"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <constraints>

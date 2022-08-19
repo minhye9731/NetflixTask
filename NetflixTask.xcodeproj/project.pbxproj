@@ -20,6 +20,10 @@
 		0EBE3FE428AFC481002F1115 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE328AFC481002F1115 /* BaseViewController.swift */; };
 		0EBE3FE728AFC54D002F1115 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBE3FE628AFC54D002F1115 /* Toast */; };
 		0EBE3FE928AFC5F3002F1115 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE828AFC5F3002F1115 /* BaseView.swift */; };
+		0EBE3FEC28AFC7D7002F1115 /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FEB28AFC7D7002F1115 /* SignInTextField.swift */; };
+		0EBE3FF028AFD1F5002F1115 /* CirclePosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FEF28AFD1F5002F1115 /* CirclePosterImageView.swift */; };
+		0EBE3FF228AFD290002F1115 /* menuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FF128AFD290002F1115 /* menuButton.swift */; };
+		0EBE3FF528AFD41D002F1115 /* CodeSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FF428AFD41D002F1115 /* CodeSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		0E6A8BBE2876DA3300187579 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		0EBE3FE328AFC481002F1115 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0EBE3FE828AFC5F3002F1115 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0EBE3FEB28AFC7D7002F1115 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
+		0EBE3FEF28AFD1F5002F1115 /* CirclePosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePosterImageView.swift; sourceTree = "<group>"; };
+		0EBE3FF128AFD290002F1115 /* menuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuButton.swift; sourceTree = "<group>"; };
+		0EBE3FF428AFD41D002F1115 /* CodeSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +78,17 @@
 		0E6A8BA528765C5200187579 /* NetflixTask */ = {
 			isa = PBXGroup;
 			children = (
-				0EBE3FE228AFC46C002F1115 /* Utility */,
 				0E6A8BA628765C5200187579 /* AppDelegate.swift */,
 				0E6A8BA828765C5200187579 /* SceneDelegate.swift */,
+				0E6A8BAC28765C5200187579 /* Main.storyboard */,
+				0E6A8BB128765C5600187579 /* LaunchScreen.storyboard */,
+				0E6A8BAF28765C5600187579 /* Assets.xcassets */,
+				0E6A8BB428765C5600187579 /* Info.plist */,
+				0EBE3FE228AFC46C002F1115 /* Utility */,
 				0E6A8BBC28765CBE00187579 /* HomeViewController.swift */,
 				0E6A8BBA28765C9D00187579 /* SignUpViewController.swift */,
 				0E6A8BBE2876DA3300187579 /* UIViewController.swift */,
-				0E6A8BAC28765C5200187579 /* Main.storyboard */,
-				0E6A8BAF28765C5600187579 /* Assets.xcassets */,
-				0E6A8BB128765C5600187579 /* LaunchScreen.storyboard */,
-				0E6A8BB428765C5600187579 /* Info.plist */,
+				0EBE3FF328AFD396002F1115 /* CodeBase */,
 			);
 			path = NetflixTask;
 			sourceTree = "<group>";
@@ -87,10 +96,29 @@
 		0EBE3FE228AFC46C002F1115 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0EBE3FEA28AFC762002F1115 /* CustomView */,
 				0EBE3FE328AFC481002F1115 /* BaseViewController.swift */,
 				0EBE3FE828AFC5F3002F1115 /* BaseView.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		0EBE3FEA28AFC762002F1115 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE3FEB28AFC7D7002F1115 /* SignInTextField.swift */,
+				0EBE3FEF28AFD1F5002F1115 /* CirclePosterImageView.swift */,
+				0EBE3FF128AFD290002F1115 /* menuButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		0EBE3FF328AFD396002F1115 /* CodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE3FF428AFD41D002F1115 /* CodeSignUpViewController.swift */,
+			);
+			path = CodeBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6A8BBF2876DA3300187579 /* UIViewController.swift in Sources */,
+				0EBE3FF028AFD1F5002F1115 /* CirclePosterImageView.swift in Sources */,
+				0EBE3FF228AFD290002F1115 /* menuButton.swift in Sources */,
+				0EBE3FEC28AFC7D7002F1115 /* SignInTextField.swift in Sources */,
 				0E6A8BBD28765CBE00187579 /* HomeViewController.swift in Sources */,
 				0E6A8BA728765C5200187579 /* AppDelegate.swift in Sources */,
 				0E6A8BBB28765C9D00187579 /* SignUpViewController.swift in Sources */,
+				0EBE3FF528AFD41D002F1115 /* CodeSignUpViewController.swift in Sources */,
 				0EBE3FE928AFC5F3002F1115 /* BaseView.swift in Sources */,
 				0E6A8BA928765C5200187579 /* SceneDelegate.swift in Sources */,
 				0EBE3FE428AFC481002F1115 /* BaseViewController.swift in Sources */,
