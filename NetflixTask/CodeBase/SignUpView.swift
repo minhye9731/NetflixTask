@@ -13,7 +13,7 @@ class SignUpView: BaseView {
         let label = UILabel()
         label.text = "JACKFLIX"
         label.textColor = .red
-        label.font = .boldSystemFont(ofSize: 24)
+        label.font = .boldSystemFont(ofSize: 30)
         label.textAlignment = .center
         return label
     }()
@@ -62,7 +62,8 @@ class SignUpView: BaseView {
         button.setTitle("회원가입", for: .normal)
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = .white
-        button.titleLabel?.textColor = .black
+//        button.titleLabel?.textColor = .black
+        button.tintColor = .black
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
         return button
@@ -100,6 +101,72 @@ class SignUpView: BaseView {
     }
     
     // MARK: - 레이아웃 잡기
-    override func setConstraints() { }
+    override func setConstraints() {
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(60)
+            make.leadingMargin.trailingMargin.equalTo(50)
+        }
+        
+        emailTextField.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(titleLabel).offset(125)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(42)
+        }
+        
+        passwordTextField.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(emailTextField.snp.bottom).offset(14)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(42)
+        }
+        
+        nicknameTextField.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(passwordTextField.snp.bottom).offset(14)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(42)
+        }
+        
+        locationTextField.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(nicknameTextField.snp.bottom).offset(14)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(42)
+        }
+        
+        codeTextField.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(locationTextField.snp.bottom).offset(14)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(42)
+        }
+        
+        signInButton.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(codeTextField.snp.bottom).offset(14)
+            make.leadingMargin.trailingMargin.equalTo(26)
+            make.height.equalTo(58)
+        }
+        
+        extraInfoButton.snp.makeConstraints { make in
+            make.top.equalTo(signInButton.snp.bottom).offset(14)
+            make.leadingMargin.equalTo(26)
+            make.width.equalTo(110)
+        }
+        
+        onOffSwitch.snp.makeConstraints { make in
+            make.top.equalTo(signInButton.snp.bottom).offset(14)
+            make.trailingMargin.equalTo(-26)
+        }
+        
+        
+        
+        
+        
+        
+        
+    }
     
 }
