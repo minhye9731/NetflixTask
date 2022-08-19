@@ -17,6 +17,9 @@
 		0E6A8BBB28765C9D00187579 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBA28765C9D00187579 /* SignUpViewController.swift */; };
 		0E6A8BBD28765CBE00187579 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBC28765CBE00187579 /* HomeViewController.swift */; };
 		0E6A8BBF2876DA3300187579 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBE2876DA3300187579 /* UIViewController.swift */; };
+		0EBE3FE428AFC481002F1115 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE328AFC481002F1115 /* BaseViewController.swift */; };
+		0EBE3FE728AFC54D002F1115 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBE3FE628AFC54D002F1115 /* Toast */; };
+		0EBE3FE928AFC5F3002F1115 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE828AFC5F3002F1115 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		0E6A8BBA28765C9D00187579 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0E6A8BBC28765CBE00187579 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0E6A8BBE2876DA3300187579 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		0EBE3FE328AFC481002F1115 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0EBE3FE828AFC5F3002F1115 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBE3FE728AFC54D002F1115 /* Toast in Frameworks */,
 				0E57579628845FD000B31745 /* TextFieldEffects in Frameworks */,
 				0E5757992884639400B31745 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -64,6 +70,7 @@
 		0E6A8BA528765C5200187579 /* NetflixTask */ = {
 			isa = PBXGroup;
 			children = (
+				0EBE3FE228AFC46C002F1115 /* Utility */,
 				0E6A8BA628765C5200187579 /* AppDelegate.swift */,
 				0E6A8BA828765C5200187579 /* SceneDelegate.swift */,
 				0E6A8BBC28765CBE00187579 /* HomeViewController.swift */,
@@ -75,6 +82,15 @@
 				0E6A8BB428765C5600187579 /* Info.plist */,
 			);
 			path = NetflixTask;
+			sourceTree = "<group>";
+		};
+		0EBE3FE228AFC46C002F1115 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE3FE328AFC481002F1115 /* BaseViewController.swift */,
+				0EBE3FE828AFC5F3002F1115 /* BaseView.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +112,7 @@
 			packageProductDependencies = (
 				0E57579528845FD000B31745 /* TextFieldEffects */,
 				0E5757982884639400B31745 /* IQKeyboardManagerSwift */,
+				0EBE3FE628AFC54D002F1115 /* Toast */,
 			);
 			productName = NetflixTask;
 			productReference = 0E6A8BA328765C5200187579 /* NetflixTask.app */;
@@ -128,6 +145,7 @@
 			packageReferences = (
 				0E57579428845FD000B31745 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				0E5757972884639300B31745 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				0EBE3FE528AFC54D002F1115 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 0E6A8BA428765C5200187579 /* Products */;
 			projectDirPath = "";
@@ -160,7 +178,9 @@
 				0E6A8BBD28765CBE00187579 /* HomeViewController.swift in Sources */,
 				0E6A8BA728765C5200187579 /* AppDelegate.swift in Sources */,
 				0E6A8BBB28765C9D00187579 /* SignUpViewController.swift in Sources */,
+				0EBE3FE928AFC5F3002F1115 /* BaseView.swift in Sources */,
 				0E6A8BA928765C5200187579 /* SceneDelegate.swift in Sources */,
+				0EBE3FE428AFC481002F1115 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +418,14 @@
 				version = 6.5.0;
 			};
 		};
+		0EBE3FE528AFC54D002F1115 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -410,6 +438,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E5757972884639300B31745 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		0EBE3FE628AFC54D002F1115 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBE3FE528AFC54D002F1115 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

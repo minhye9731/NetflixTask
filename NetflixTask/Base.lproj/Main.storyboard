@@ -378,6 +378,23 @@
             <point key="canvasLocation" x="1697" y="-335"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="1eh-bE-FU0">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="P3S-ue-kdW">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="jzK-Mh-0n8">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="wMn-09-ebJ">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="zjW-Af-X0w">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="background" width="375" height="667"/>
         <image name="check" width="18" height="13"/>
