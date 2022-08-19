@@ -21,19 +21,9 @@ class SignInTextField: UITextField {
     func setupView() {
         self.backgroundColor = .systemGray
         self.layer.cornerRadius = 8
-        
         self.textAlignment = .center
         self.font = .systemFont(ofSize: 15)
-//        self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        
-//        self.keyboardType = keyboardType
         self.autocorrectionType = .no
         
-//        if #available(iOS 12.0, *) { self.textContentType = .oneTimeCode }
-//        self.isSecureTextEntry = isSecureTextEntry
-        
     }
-    
-    
-    
 }
