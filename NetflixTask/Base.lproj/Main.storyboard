@@ -329,6 +329,21 @@
             </objects>
             <point key="canvasLocation" x="-43" y="916"/>
         </scene>
+        <!--CodeHomeViewController-->
+        <scene sceneID="hqT-Sr-Ob9">
+            <objects>
+                <viewController storyboardIdentifier="CodeHomeViewController" title="CodeHomeViewController" id="4gH-m2-bdO" customClass="CodeHomeViewController" customModule="NetflixTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Bu-2q-06m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="H7u-U6-gKX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ek5-Df-r4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="667" y="915"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="1eh-bE-FU0">

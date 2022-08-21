@@ -162,11 +162,6 @@ class SignUpView: BaseView {
         }
         
         
-        
-        
-        
-        
-        
     }
     
 }

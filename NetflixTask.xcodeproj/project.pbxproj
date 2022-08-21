@@ -17,6 +17,8 @@
 		0E6A8BBB28765C9D00187579 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBA28765C9D00187579 /* SignUpViewController.swift */; };
 		0E6A8BBD28765CBE00187579 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBC28765CBE00187579 /* HomeViewController.swift */; };
 		0E6A8BBF2876DA3300187579 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A8BBE2876DA3300187579 /* UIViewController.swift */; };
+		0E78E9C228B27D3B00AD2B4E /* CodeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E78E9C128B27D3B00AD2B4E /* CodeHomeViewController.swift */; };
+		0E78E9C428B27D8700AD2B4E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E78E9C328B27D8700AD2B4E /* HomeView.swift */; };
 		0EBE3FE428AFC481002F1115 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE328AFC481002F1115 /* BaseViewController.swift */; };
 		0EBE3FE728AFC54D002F1115 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBE3FE628AFC54D002F1115 /* Toast */; };
 		0EBE3FE928AFC5F3002F1115 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBE3FE828AFC5F3002F1115 /* BaseView.swift */; };
@@ -39,6 +41,8 @@
 		0E6A8BBA28765C9D00187579 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0E6A8BBC28765CBE00187579 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0E6A8BBE2876DA3300187579 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		0E78E9C128B27D3B00AD2B4E /* CodeHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeHomeViewController.swift; sourceTree = "<group>"; };
+		0E78E9C328B27D8700AD2B4E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0EBE3FE328AFC481002F1115 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0EBE3FE828AFC5F3002F1115 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0EBE3FEB28AFC7D7002F1115 /* SignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				0EBE3FF428AFD41D002F1115 /* CodeSignUpViewController.swift */,
 				0EBE3FF928AFD50D002F1115 /* SignUpView.swift */,
+				0E78E9C128B27D3B00AD2B4E /* CodeHomeViewController.swift */,
+				0E78E9C328B27D8700AD2B4E /* HomeView.swift */,
 			);
 			path = CodeBase;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6A8BBF2876DA3300187579 /* UIViewController.swift in Sources */,
+				0E78E9C428B27D8700AD2B4E /* HomeView.swift in Sources */,
 				0EBE3FF028AFD1F5002F1115 /* CirclePosterImageView.swift in Sources */,
 				0EBE3FF228AFD290002F1115 /* menuButton.swift in Sources */,
 				0EBE3FEC28AFC7D7002F1115 /* SignInTextField.swift in Sources */,
 				0EBE3FFA28AFD50D002F1115 /* SignUpView.swift in Sources */,
+				0E78E9C228B27D3B00AD2B4E /* CodeHomeViewController.swift in Sources */,
 				0E6A8BBD28765CBE00187579 /* HomeViewController.swift in Sources */,
 				0E6A8BA728765C5200187579 /* AppDelegate.swift in Sources */,
 				0E6A8BBB28765C9D00187579 /* SignUpViewController.swift in Sources */,
